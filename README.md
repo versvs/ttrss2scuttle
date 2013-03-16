@@ -25,9 +25,9 @@ This project is licensed under the GNU GPL license version 3 (or newer). For a t
 
 
 
-INSTALLATION
-============
-1. Download the "master" branch.
+RECOMMENDED INSTALLATION
+========================
+1. Recommended: Download the latestest tagged version. Right now, it is v1.1: https://github.com/versvs/ttrss2scuttle/archive/v1.1.zip
 2. Uncompress the files.
 3. Edit the Line 18 of the "/semanticscuttle/semanticscuttle.js" file and update the share_url value with that of the URL for your Semantic Scuttle instance.
 4. Save changes and upload the "/semanticscuttle" folder and all of its content to the "/plugins" folder inside your Tiny Tiny RSS installation.
@@ -35,6 +35,7 @@ INSTALLATION
 6. Activate your plugin.
 7. Enjoy :)
 8. (Optional) Spread the word on free (as in free speech) software :)
+
 
 
 CHANGELOG
