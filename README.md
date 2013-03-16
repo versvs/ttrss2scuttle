@@ -35,3 +35,19 @@ INSTALLATION
 6. Activate your plugin.
 7. Enjoy :)
 8. (Optional) Spread the word on free (as in free speech) software :)
+
+
+CHANGELOG
+=========
+
+version 1.1 - march 2013
+------------------------
+* Restructured files and code to work with TT-RSS v1.7
+* First public version
+* As this is now publicly available, it is now licensed under GPL v3.
+
+
+version 1.0 - june 2012
+-----------------------
+* First version: working with TT-RSS v1.5
+
