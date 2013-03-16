@@ -1,7 +1,7 @@
 TTRSS2SCUTTLE
 =============
 
-Plugin to enable the saving of any feed item into your instance of semantic scuttle
+Plugin to enable the saving of any feed item from Tiny Tiny RSS (http://tt-rss.org) into your instance of SemanticScuttle (http://sourceforge.net/projects/semanticscuttle/).
 
 
 NOTES
