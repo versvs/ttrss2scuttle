@@ -1,6 +1,6 @@
-	function shareArticleToSemanticScuttle(id) {
+function shareArticleToSemanticScuttle(id) {
 	try {
-		var query = "?op=pluginhandler&plugin=semanticscuttle&method=getInfo&id=" + param_escape(id);
+		var query = "?op=pluginhandler&plugin=semanticscuttle&method=getSemanticScuttle&id=" + param_escape(id);
 
 		console.log(query);
 
@@ -15,7 +15,8 @@
 			onComplete: function(transport) {
 				var ti = JSON.parse(transport.responseText);
 
-				var share_url = "http://www.yourdomain.com/root/of/your/instance/bookmarks.php/?action=add" +
+				var share_url = ti.semanticscuttleurl +
+					"bookmarks.php/?action=add" +
 					"&address=" + param_escape(ti.link) +
 					"&title=" + param_escape(ti.title) +
 					"&description=";
@@ -24,13 +25,8 @@
 
 			} });
 
-
 	} catch (e) {
-		exception_error("shareArticleIdentica", e);
+		exception_error("shareArticleToSemanticScuttle", e);
 	}
-
-
-
-
-	}
+}
 
