@@ -5,7 +5,8 @@ Plugin to enable the saving of any feed item from Tiny Tiny RSS (http://tt-rss.o
 
 AUTHOR
 ======
-ttrss2scuttle is developed by Jose Alcántara (http://www.versvs.net).
+ttrss2scuttle is developed by Jose Alcántara (http://www.versvs.net) and the development is sponsored by Cartograf (http://www.cartograf.net).
+
 
 NOTES
 =====
