@@ -12,8 +12,8 @@ class SemanticScuttle extends Plugin {
 	}
 
 	function about() {
-		return array(1.0,
-			"Share article in SemanticScuttle",
+		return array(2.0,
+			"Save article in SemanticScuttle",
 			"versvs");
 	}
 
@@ -35,6 +35,12 @@ class SemanticScuttle extends Plugin {
 	    print "<br/>";
 
 	    $value = $this->host->get($this, "semanticscuttle");
+
+	    print "<div id=\"semantic-header\" style=\"margin-bottom: 2em;\">";
+	    print "<strong>Options for Semantic Scuttle Plugin</strong><br />";
+	    print "(by Jose Alcántara - <a target=\"_blank\" title=\"Open new tab to visit developer website\" style=\"text-decoration:underline;\" href=\"http://www.versvs.net\">http://www.versvs.net</a>)";
+
+	    print "</div>";
 	    print "<form dojoType=\"dijit.form.Form\">";
 
 	    print "<script type=\"dojo/method\" event=\"onSubmit\" args=\"evt\">
@@ -54,8 +60,8 @@ class SemanticScuttle extends Plugin {
 	    print "<input dojoType=\"dijit.form.TextBox\" style=\"display : none\" name=\"method\" value=\"save\">";
 	    print "<input dojoType=\"dijit.form.TextBox\" style=\"display : none\" name=\"plugin\" value=\"semanticscuttle\">";
 	    print "<table width=\"100%\" class=\"prefPrefsList\">";
-		print "<tr><td width=\"40%\">".__("SemanticScuttle url")."</td>";
-		print "<td class=\"prefValue\"><input dojoType=\"dijit.form.ValidationTextBox\" required=\"1\" name=\"semanticscuttle_url\" regExp='^(http|https)://.*' value=\"$value\"></td></tr>";
+		print "<tbody><tr><td style=\"width: 10%; min-width: 100px;\">".__("SemanticScuttle url")."</td>";
+		print "<td class=\"prefValue\"><input style=\"width: 25em;\" dojoType=\"dijit.form.ValidationTextBox\" required=\"1\" name=\"semanticscuttle_url\" regExp='^(http|https)://.*' value=\"$value\"></td></tr></tbody>";
 	    print "</table>";
 	    print "<p><button dojoType=\"dijit.form.Button\" type=\"submit\">".__("Save")."</button>";
 
