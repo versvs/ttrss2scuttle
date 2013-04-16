@@ -18,7 +18,7 @@ class SemanticScuttle extends Plugin {
 	}
 
 	function save() {
-		$semanticscuttle_url = db_escape_string($_POST["semanticscuttle_url"]);
+		$semanticscuttle_url = db_escape_string($this->link, $_POST["semanticscuttle_url"]);
     		$this->host->set($this, "semanticscuttle", $semanticscuttle_url);
 		echo "Value set to $semanticscuttle_url";
 	}
@@ -83,7 +83,7 @@ class SemanticScuttle extends Plugin {
 	}
 
 	function getSemanticScuttle() {
-		$id = db_escape_string($_REQUEST['id']);
+		$id = db_escape_string($this->link, $_REQUEST['id']);
 
 		$result = db_query($this->link, "SELECT title, link
 				FROM ttrss_entries, ttrss_user_entries
