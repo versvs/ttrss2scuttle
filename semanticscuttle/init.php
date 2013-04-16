@@ -74,7 +74,7 @@ class SemanticScuttle extends Plugin {
 	function hook_article_button($line) {
 		$article_id = $line["id"];
 
-		$rv = "<img src=\"".theme_image($this->link, 'plugins/semanticscuttle/semanticscuttle.png')."\"
+		$rv = "<img src=\"plugins/semanticscuttle/semanticscuttle.png\"
 			class='tagsPic' style=\"cursor : pointer\"
 			onclick=\"shareArticleToSemanticScuttle($article_id)\"
 			title='".__('Share on SemanticScuttle')."'>";
