@@ -59,7 +59,7 @@ class SemanticScuttle extends Plugin {
 	    print "<input dojoType=\"dijit.form.TextBox\" style=\"display : none\" name=\"plugin\" value=\"semanticscuttle\">";
 	    print "<table width=\"100%\" class=\"prefPrefsList\">";
 		print "<tbody><tr><td style=\"width: 10%; min-width: 100px;\">".__("SemanticScuttle url")."</td>";
-		print "<td class=\"prefValue\"><input style=\"width: 25em;\" dojoType=\"dijit.form.ValidationTextBox\" required=\"1\" name=\"semanticscuttle_url\" regExp='^(http|https)://.*' value=\"$value\"></td></tr></tbody>";
+		print "<td class=\"prefValue\"><input style=\"width: 25em;\" dojoType=\"dijit.form.ValidationTextBox\" required=\"1\" name=\"semanticscuttle_url\" regExp='^(http|https)://.*/' value=\"$value\"></td></tr></tbody>";
 	    print "</table>";
 	    print "<p><button dojoType=\"dijit.form.Button\" type=\"submit\">".__("Save")."</button>";
 
