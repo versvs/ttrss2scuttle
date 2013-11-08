@@ -15,7 +15,7 @@ This plugin was built upon the foundation of the plugin for Read It Later provid
 
 It was later adapted to the new plugin structure, in order to get it working with version 1.7 of Tiny Tiny RSS.
 
-Latest version run with TT-RSS v1.8.
+This plugin is 100% compatible with the latest version of TinyTinyRSS v1.10.
 
 
 LOGO AUTHORSHIP
